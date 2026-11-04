@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Hefnawi's Gun">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#232526">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<title>Hefnawi's Gun 🔫</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+  :root {
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --text: #1a2028;
+    --muted: #6b7684;
+    --border: #e2e6ea;
+    --accent: #ff5722;
+    --accent-dark: #d84315;
+    --accent-2: #25d366;
+    --danger: #c0392b;
+    --sent-bg: #eafaf0;
+    --header-grad: linear-gradient(135deg, #232526 0%, #2c2c2e 45%, #ff5722 130%);
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121316;
+      --card: #1d2027;
+      --text: #f0f2f5;
+      --muted: #9aa2ad;
+      --border: #2c303a;
+      --accent: #ff7043;
+      --accent-dark: #ff5722;
+      --sent-bg: #163524;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121316;
+    --card: #1d2027;
+    --text: #f0f2f5;
+    --muted: #9aa2ad;
+    --border: #2c303a;
+    --accent: #ff7043;
+    --accent-dark: #ff5722;
+    --sent-bg: #163524;
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    padding: calc(16px + env(safe-area-inset-top, 0px)) 18px 18px;
+    background: var(--header-grad);
+    color: #fff;
+    z-index: 10;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+  }
+  .header-inner { display: flex; align-items: center; gap: 12px; }
+  .gun-icon { flex-shrink: 0; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4)); }
+  .gun-icon .spark { animation: flash 1.6s ease-in-out infinite; transform-origin: center; }
+  @keyframes flash {
+    0%, 100% { opacity: 0.3; transform: scale(0.85); }
+    50% { opacity: 1; transform: scale(1.15); }
+  }
+  header h1 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    background: linear-gradient(90deg, #fff, #ffd8c2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  header p { margin: 3px 0 0; font-size: 0.8rem; opacity: 0.8; }
+  main { padding: 16px; padding-bottom: calc(100px + env(safe-area-inset-bottom, 0px)); max-width: 640px; margin: 0 auto; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s ease;
+  }
+  .card h2 {
+    margin: 0 0 10px;
+    font-size: 0.95rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  textarea, input[type="text"] {
+    width: 100%;
+    background: var(--bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    resize: vertical;
+  }
+  textarea { min-height: 70px; }
+  label.small { display: block; font-size: 0.8rem; color: var(--muted); margin: 10px 0 4px; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .row > * { flex: 1; min-width: 120px; }
+  button { transition: transform 0.08s ease, box-shadow 0.15s ease, opacity 0.15s ease; }
+  button:active, .send-btn:active, .rapid-btn:active { transform: scale(0.97); }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: #fff;
+    width: 100%;
+    box-shadow: 0 3px 10px rgba(255,87,34,0.35);
+  }
+  .btn-primary:disabled { opacity: 0.5; box-shadow: none; }
+  .btn-secondary { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
+  .btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); font-weight: 500; font-size: 0.8rem; padding: 6px 10px; }
+  #fileInput { display: none; }
+  .upload-box {
+    border: 2px dashed var(--accent);
+    border-radius: 14px;
+    padding: 22px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    cursor: pointer;
+    background: color-mix(in srgb, var(--accent) 6%, transparent);
+    transition: background 0.15s ease;
+  }
+  .upload-box:active { background: color-mix(in srgb, var(--accent) 14%, transparent); }
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .stats b { color: var(--text); }
+  .toggle-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+  .toggle-row span { font-size: 0.85rem; }
+  .contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .contact:last-child { border-bottom: none; }
+  .contact.sent { background: var(--sent-bg); border-radius: 8px; padding-left: 8px; padding-right: 8px; }
+  .contact-info { flex: 1; min-width: 0; }
+  .contact-info .name { font-weight: 600; font-size: 0.9rem; }
+  .contact-info .phone { font-size: 0.78rem; color: var(--muted); }
+  .contact-info .tpl { font-size: 0.72rem; color: var(--accent); font-weight: 600; }
+  .send-btn {
+    background: var(--accent-2);
+    color: #fff;
+    padding: 9px 14px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 2px 6px rgba(37,211,102,0.35);
+  }
+  .send-btn.sent { background: var(--muted); box-shadow: none; }
+  .empty { text-align: center; color: var(--muted); padding: 30px 10px; font-size: 0.85rem; }
+  .rapid-card {
+    background: linear-gradient(180deg, var(--bg), color-mix(in srgb, var(--accent) 5%, var(--bg)));
+    border: 1.5px solid var(--border);
+    border-radius: 18px;
+    padding: 22px;
+    text-align: center;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .rapid-card .count {
+    font-size: 0.72rem;
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .rapid-card .name { font-size: 1.3rem; font-weight: 800; margin-bottom: 2px; }
+  .rapid-card .phone { font-size: 0.85rem; color: var(--muted); margin-bottom: 12px; }
+  .rapid-card .msg-preview {
+    white-space: pre-wrap;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 0.82rem;
+    color: var(--text);
+    text-align: start;
+    margin-bottom: 18px;
+    max-height: 110px;
+    overflow-y: auto;
+  }
+  .rapid-btn {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, var(--accent-2), #1fa855);
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    padding: 18px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(37,211,102,0.4);
+  }
+  .rapid-skip {
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+  }
+  .rapid-done { text-align: center; padding: 24px 10px; }
+  .rapid-done .big { font-size: 2.2rem; margin-bottom: 6px; }
+  .rapid-done .msg { color: var(--text); font-weight: 700; font-size: 1rem; margin-bottom: 4px; }
+  .rapid-done .sub { color: var(--muted); font-size: 0.82rem; }
+  .footer-note { font-size: 0.72rem; color: var(--muted); text-align: center; margin-top: 10px; }
+  .vc-help { margin: 0 0 8px; font-size: 0.82rem; color: var(--muted); line-height: 1.45; }
+  .vc-status { margin-top: 10px; padding: 10px 12px; border-radius: 10px; font-size: 0.8rem; line-height: 1.5;
+    background: color-mix(in srgb, var(--accent-2) 12%, transparent); border: 1px solid var(--accent-2); color: var(--text); }
+  .vc-status a { color: var(--accent); font-weight: 700; }
+  .hdr-progress { margin-top: 12px; height: 6px; border-radius: 6px; background: rgba(255,255,255,0.18); overflow: hidden; }
+  #hdrBar { height: 100%; width: 0; background: linear-gradient(90deg, #ffca28, #25d366); border-radius: 6px; transition: width 0.3s ease; }
+  #hdrCount { margin-top: 6px; font-size: 0.75rem; opacity: 0.85; }
+  .tab { display: none; }
+  .tab.active { display: block; }
+  #bottomNav {
+    position: fixed; left: 0; right: 0; bottom: 0; display: flex; gap: 4px;
+    background: var(--card); border-top: 1px solid var(--border);
+    padding: 6px 8px calc(6px + env(safe-area-inset-bottom, 0px));
+    z-index: 40; box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
+  }
+  #bottomNav button {
+    flex: 1; background: transparent; border: none; color: var(--muted);
+    display: flex; flex-direction: column; align-items: center; gap: 2px;
+    font-size: 0.72rem; font-weight: 600; padding: 6px 0; border-radius: 10px;
+  }
+  #bottomNav button .ni { font-size: 1.3rem; line-height: 1; }
+  #bottomNav button.active { color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .tag-chip {
+    background: transparent; color: var(--muted); border: 1px solid var(--border);
+    border-radius: 999px; padding: 5px 10px; font-size: 0.72rem; font-weight: 600;
+  }
+  .tag-chip.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .last-strip { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--border); text-align: start; }
+  .last-title { font-size: 0.78rem; color: var(--muted); }
+  .last-title b { color: var(--text); }
+  .filter-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+  .filter-chip {
+    background: var(--bg); color: var(--text); border: 1px solid var(--border);
+    border-radius: 12px; padding: 8px 12px; font-size: 0.8rem; font-weight: 600;
+  }
+  .filter-chip.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .res-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .res-head span { font-size: 0.8rem; color: var(--muted); }
+  .chat-link {
+    background: var(--accent-2); color: #fff; padding: 8px 12px; border-radius: 10px;
+    font-size: 0.78rem; font-weight: 600; text-decoration: none; white-space: nowrap;
+  }
+  #toast {
+    position: fixed;
+    left: 50%;
+    bottom: calc(92px + env(safe-area-inset-bottom, 0px));
+    transform: translateX(-50%) translateY(20px);
+    background: #111;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    max-width: 90%;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 50;
+  }
+  #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  #uploadStatus {
+    margin-top: 10px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+  #uploadStatus.error { background: color-mix(in srgb, var(--danger) 12%, transparent); color: var(--danger); border: 1px solid var(--danger); }
+  #uploadStatus.success { background: color-mix(in srgb, var(--accent-2) 12%, transparent); color: var(--accent-2); border: 1px solid var(--accent-2); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <svg class="gun-icon" width="46" height="46" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="7" y="22" width="45" height="12" rx="2.5" fill="#f5f5f5" stroke="#111" stroke-width="1"/>
+      <rect x="48" y="19.5" width="3" height="3" fill="#f5f5f5" stroke="#111" stroke-width="0.8"/>
+      <path d="M10 34h30v4H28l-3 2H10z" fill="#f5f5f5" stroke="#111" stroke-width="1" stroke-linejoin="round"/>
+      <path d="M10 37h12l3 19H14z" fill="#f5f5f5" stroke="#111" stroke-width="1" stroke-linejoin="round"/>
+      <path d="M27 34a6 6 0 0 0 12 0" stroke="#f5f5f5" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M33 38v5" stroke="#f5f5f5" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M12 24.5v7M14.5 24.5v7M17 24.5v7" stroke="#111" stroke-width="0.8"/>
+      <g class="spark">
+        <path d="M55 28h7M55 25l5-4M55 31l5 4" stroke="#ffca28" stroke-width="1.8" stroke-linecap="round"/>
+      </g>
+    </svg>
+    <div>
+      <h1>Hefnawi's Gun</h1>
+      <p>Aim your list. One tap. Next contact.</p>
+    </div>
+  </div>
+  <div class="hdr-progress"><div id="hdrBar"></div></div>
+  <div id="hdrCount">No contacts loaded yet</div>
+</header>
+
+<main>
+
+  <div class="tab" id="tab-setup">
+
+  <div class="card">
+    <h2>1 · Contacts</h2>
+    <div class="upload-box" id="uploadBox">
+      Tap to upload an Excel/CSV file<br>
+      <span style="font-size:0.72rem">works with a plain name/phone list, or a RocketSend-style export (Customer, Phone, Template, message, Status)</span>
+    </div>
+    <div id="uploadStatus" style="display:none"></div>
+    <input type="file" id="fileInput" accept=".xlsx,.xls,.csv,text/csv,text/comma-separated-values,application/csv,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,*/*">
+    <label class="small">…or paste one contact per line — "Name, Phone"</label>
+    <textarea id="pasteArea" placeholder="Ahmed Ali, 0501234567&#10;Fatima Noor, 971559876543"></textarea>
+    <div class="row" style="margin-top:10px">
+      <button class="btn-secondary" id="loadPasteBtn">Load pasted list</button>
+      <button class="btn-ghost" id="clearBtn">Clear all</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📇 Save to phone contacts</h2>
+    <p class="vc-help">Saves everyone loaded above into your phone's Contacts in one go, so each person is already a saved contact before you message them.</p>
+    <label class="small">Name for contacts that have no name</label>
+    <input type="text" id="vcPrefix" value="ADIB Lead" maxlength="30">
+    <div class="toggle-row" style="margin-top:10px">
+      <span>Only contacts not yet marked sent</span>
+      <input type="checkbox" id="vcUnsentOnly" checked>
+    </div>
+    <button class="btn-primary" id="vcBtn">Save contacts to phone</button>
+    <div id="vcStatus" class="vc-status" style="display:none"></div>
+  </div>
+
+  <div class="card">
+    <h2>2 · Message templates (rotated per contact)</h2>
+    <label class="small">Use {name} where the contact's name should go</label>
+    <textarea id="t1" dir="auto" style="min-height:150px;" placeholder="T1">السلام عليكم ورحمة الله و بركاته..
+
+حسن حفناوي
+مصرف ابو ظبي الإسلامي( أديب ADIB🔵)
+قسم التمويل الشخصي
+
+Mobile: 0506959580  - 0508959529
+Email : hassan.gharib@adib.com
+
+
+ ♻️ مبادرة الخير من مصرف أبو ظبي الإسلامي لسداد الالتزامات ونقل المديونيات من البنوك الأخرى
+
+ - أكبر خصم على نسبة المرابحة
+ - فترة سماح على أول قسط تصل الى " ٧ شهور" .
+ - إمكانية تأجيل الأقساط أكثر من مرتين في العام بدون اي رسوم إضافية.
+ - رسوم التأمين غير اجبارية .
+ - معاملة اسلامية عالأصول.</textarea>
+    <textarea id="t2" dir="auto" style="min-height:150px;margin-top:8px" placeholder="T2">مرحبا ، مساء الخير  🌅
+
+حسن حفناوي
+مصرف أبو ظبي الإسلامي ( أديب ADIB🔵)
+قسم التمويل الشخصي
+
+Mobile: 0506959580 - 0508959529
+Email: hassan.gharib@adib.com
+
+
+🔵 برنامج نقل وتوحيد المديونيات من جميع البنوك
+
+🔹 خصم استثنائي على نسبة الربح
+🔹 راحة بال مع فترة سماح 7 أشهر قبل أول قسط
+🔹 مرونة تامة في تأجيل الأقساط مرتين أو أكثر في السنة
+🔹 بدون إلزام بتأمين - الخيار لك
+🔹 تعامل إسلامي شفاف وموثوق
+
+هل تودّ معرفة المزيد؟ نحن هنا لمساعدتك 👇</textarea>
+    <textarea id="t3" dir="auto" style="min-height:150px;margin-top:8px" placeholder="T3">حياكم الله 
+
+حسن حفناوي
+مصرف أبو ظبي الإسلامي ( أديب ADIB🔵)
+قسم التمويل الشخصي
+
+Mobile: 0506959580 - 0508959529
+Email: hassan.gharib@adib.com
+
+
+🌟 عرض حصري لتوحيد وسداد الالتزامات المالية
+
+✅ أعلى نسبة خصم على المرابحة في السوق
+✅ فترة سماح تصل إلى 7 أشهر على أول قسط
+✅ تأجيل الأقساط أكثر من مرتين سنوياً بدون رسوم
+✅ رسوم التأمين اختيارية وغير إلزامية
+✅ معاملة إسلامية وفق أحكام الشريعة
+
+للاستفسار والتواصل، يسعدنا خدمتكم 🤝</textarea>
+  </div>
+
+  </div><!-- /tab-setup -->
+
+  <div class="tab" id="tab-fire">
+
+  <div class="card">
+    <h2>Fire Away</h2>
+    <div class="toggle-row">
+      <span>Show unsent only</span>
+      <input type="checkbox" id="unsentToggle" checked>
+    </div>
+    <div class="toggle-row">
+      <span>⚡ Rapid-fire mode — one big tap per contact</span>
+      <input type="checkbox" id="rapidToggle">
+    </div>
+    <div class="toggle-row">
+      <span>📋 Exact-text mode — copies the message, opens the chat, you paste</span>
+      <input type="checkbox" id="copyToggle">
+    </div>
+    <div class="stats" id="stats"></div>
+
+    <div id="rapidView" style="display:none">
+      <div id="rapidCard" class="rapid-card"></div>
+    </div>
+    <div id="list"></div>
+
+    <div class="footer-note">Each button opens WhatsApp with the message pre-filled — you tap Send there. Nothing is sent automatically. Progress is saved on this phone only.</div>
+  </div>
+
+  </div><!-- /tab-fire -->
+
+  <div class="tab" id="tab-results">
+    <div class="card">
+      <h2>Results</h2>
+      <div class="filter-row" id="filterRow"></div>
+      <div class="res-head"><span id="resCount"></span><button class="btn-ghost" id="copyNumsBtn">Copy numbers</button></div>
+      <div id="resList"></div>
+    </div>
+  </div>
+
+</main>
+<nav id="bottomNav">
+  <button data-tab="setup"><span class="ni">🧰</span><span>Setup</span></button>
+  <button data-tab="fire"><span class="ni">🔫</span><span>Fire</span></button>
+  <button data-tab="results"><span class="ni">📊</span><span>Results</span></button>
+</nav>
+<div id="toast"></div>
+
+<script>
+(function() {
+  const STORAGE_KEY = 'campaign_sender_state_v2';
+  const OLD_KEY = 'campaign_sender_state_v1';
+  let contacts = []; // {name, phone}
+  let sent = {}; // phone -> true
+  let tags = {}; // phone -> 'interested' | 'noanswer' | 'followup' | 'declined'
+  let lastFired = null;
+  let currentTab = null;
+  let resultsFilter = 'interested';
+  const TAGS = [
+    { k: 'interested', label: '👍 Interested' },
+    { k: 'noanswer', label: '📵 No answer' },
+    { k: 'followup', label: '🔁 Follow up' },
+    { k: 'declined', label: '✖ Not interested' }
+  ];
+
+  function loadState() {
+    try {
+      let raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) {
+        // migrate progress from v1 but keep the new default templates
+        const oldRaw = localStorage.getItem(OLD_KEY);
+        if (oldRaw) {
+          const o = JSON.parse(oldRaw);
+          contacts = o.contacts || [];
+          sent = o.sent || {};
+        }
+      }
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        contacts = parsed.contacts || [];
+        sent = parsed.sent || {};
+        if (parsed.t1) document.getElementById('t1').value = parsed.t1;
+        if (parsed.t2) document.getElementById('t2').value = parsed.t2;
+        if (parsed.t3) document.getElementById('t3').value = parsed.t3;
+        tags = parsed.tags || {};
+        if (parsed.rapid !== undefined) document.getElementById('rapidToggle').checked = !!parsed.rapid;
+        if (parsed.tab) currentTab = parsed.tab;
+        if (parsed.vcPrefix) document.getElementById('vcPrefix').value = parsed.vcPrefix;
+        if (parsed.copyPref !== undefined) document.getElementById('copyToggle').checked = !!parsed.copyPref;
+      }
+    } catch (e) { /* start fresh */ }
+  }
+
+  function saveState() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({
+        contacts, sent,
+        t1: document.getElementById('t1').value,
+        t2: document.getElementById('t2').value,
+        t3: document.getElementById('t3').value,
+        copyPref: document.getElementById('copyToggle').checked,
+        vcPrefix: document.getElementById('vcPrefix').value,
+        tags, tab: currentTab, rapid: document.getElementById('rapidToggle').checked
+      }));
+    } catch (e) { /* storage unavailable, continue without persistence */ }
+  }
+
+  function normalizePhone(raw) {
+    let p = String(raw).replace(/[^\d]/g, '');
+    if (p.startsWith('00971')) p = p.slice(2);
+    if (p.startsWith('971')) return p;
+    if (p.startsWith('0')) return '971' + p.slice(1);
+    if (p.length === 9) return '971' + p;
+    return p;
+  }
+
+  function parseRows(rows) {
+    // rows: array of arrays or array of objects
+    const out = [];
+    rows.forEach(r => {
+      let name, phone;
+      if (Array.isArray(r)) {
+        // guess which column is the phone (mostly digits)
+        const cells = r.map(c => (c === undefined || c === null) ? '' : String(c).trim());
+        const phoneIdx = cells.findIndex(c => c.replace(/[^\d]/g,'').length >= 7);
+        if (phoneIdx === -1) return;
+        phone = cells[phoneIdx];
+        name = cells.find((c, i) => i !== phoneIdx && c) || 'Contact';
+      } else {
+        const keys = Object.keys(r);
+        const phoneKey = keys.find(k => /phone|mobile|number|رقم|هاتف/i.test(k)) || keys.find(k => String(r[k]).replace(/[^\d]/g,'').length >= 7);
+        const nameKey = keys.find(k => /name|اسم/i.test(k)) || keys.find(k => k !== phoneKey);
+        phone = r[phoneKey];
+        name = r[nameKey] || 'Contact';
+      }
+      if (!phone) return;
+      const norm = normalizePhone(phone);
+      if (norm.length < 10) return;
+      out.push({ name: String(name).trim() || 'Contact', phone: norm });
+    });
+    return out;
+  }
+
+  function dedupe(list) {
+    const seen = new Set();
+    return list.filter(c => {
+      if (seen.has(c.phone)) return false;
+      seen.add(c.phone);
+      return true;
+    });
+  }
+
+  document.getElementById('uploadBox').addEventListener('click', () => {
+    document.getElementById('fileInput').click();
+  });
+
+  document.getElementById('fileInput').addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const uploadBox = document.getElementById('uploadBox');
+    const statusEl = document.getElementById('uploadStatus');
+    const originalText = uploadBox.innerHTML;
+    uploadBox.innerHTML = `Reading ${escapeHtml(file.name)}…`;
+    const reader = new FileReader();
+    const isCsv = /\.csv$/i.test(file.name);
+
+    const restoreBox = () => { uploadBox.innerHTML = originalText; };
+    const showStatus = (msg, isError) => {
+      statusEl.style.display = 'block';
+      statusEl.className = isError ? 'error' : 'success';
+      statusEl.textContent = msg;
+    };
+    const fail = (msg) => {
+      restoreBox();
+      showStatus(msg + ' If this keeps happening: open the Files app, tap and hold the file, and make sure it shows no cloud icon (fully downloaded) before selecting it here — or use the paste option instead.', true);
+    };
+
+    reader.onerror = () => fail('The browser could not read that file (it may still be in iCloud and not downloaded to the device).');
+    reader.onabort = () => fail('Reading the file was interrupted.');
+
+    if (isCsv) {
+      reader.onload = (evt) => {
+        try {
+          let text = evt.target.result;
+          if (typeof text !== 'string' || !text.length) { fail('The file appears to be empty.'); return; }
+          if (text.charCodeAt(0) === 0xFEFF) text = text.slice(1); // strip BOM
+          const rows = parseCsvText(text).filter(r => r.some(c => String(c).trim() !== ''));
+          if (rows.length < 2) { fail('Could not find any data rows in that CSV.'); return; }
+          const added = ingestRows(rows);
+          restoreBox();
+          if (added === 0) showStatus('That file was read, but every contact in it was already loaded (or no valid phone numbers were found).', false);
+          else showStatus(`Loaded ${added} new contact${added === 1 ? '' : 's'}.`, false);
+        } catch (err) {
+          fail('Could not parse that CSV (' + err.message + ').');
+        }
+      };
+      reader.readAsText(file, 'UTF-8');
+    } else {
+      reader.onload = (evt) => {
+        try {
+          const wb = XLSX.read(evt.target.result, { type: 'array' });
+          const sheet = wb.Sheets[wb.SheetNames[0]];
+          const json = XLSX.utils.sheet_to_json(sheet, { header: 1, defval: '' });
+          const rows = json.filter(r => r.some(c => String(c).trim() !== ''));
+          const added = ingestRows(rows);
+          restoreBox();
+          if (added === 0) showStatus('That file was read, but every contact in it was already loaded (or no valid phone numbers were found).', false);
+          else showStatus(`Loaded ${added} new contact${added === 1 ? '' : 's'}.`, false);
+        } catch (err) {
+          fail('Could not read that file (' + err.message + '). Try exporting it as .csv, or paste the list instead.');
+        }
+      };
+      reader.readAsArrayBuffer(file);
+    }
+  });
+
+  // Minimal RFC4180 CSV parser: handles quoted fields with embedded commas,
+  // newlines and escaped quotes (needed for RocketSend-style exports where
+  // the message column is a full multi-line pre-written message).
+  function parseCsvText(text) {
+    const rows = [];
+    let row = [], field = '', inQuotes = false;
+    for (let i = 0; i < text.length; i++) {
+      const c = text[i];
+      if (inQuotes) {
+        if (c === '"') {
+          if (text[i + 1] === '"') { field += '"'; i++; }
+          else { inQuotes = false; }
+        } else field += c;
+      } else if (c === '"') inQuotes = true;
+      else if (c === ',') { row.push(field); field = ''; }
+      else if (c === '\r') { /* ignore */ }
+      else if (c === '\n') { row.push(field); rows.push(row); row = []; field = ''; }
+      else field += c;
+    }
+    if (field.length || row.length) { row.push(field); rows.push(row); }
+    return rows;
+  }
+
+  // Recognizes named columns like Customer/Phone/Template/message/Status
+  // (as produced by the old RocketSend export). Returns null if the header
+  // row doesn't look like that format, so callers can fall back to the
+  // generic "guess which column is the phone number" parser.
+  function detectHeaderMap(headerRow) {
+    const map = {};
+    headerRow.forEach((h, i) => {
+      const key = String(h).trim().toLowerCase();
+      if (!key) return;
+      if (/phone|mobile|number|رقم|هاتف/.test(key)) map.phone = i;
+      else if (/^customer$|^name$|اسم/.test(key)) map.name = i;
+      else if (/template/.test(key)) map.template = i;
+      else if (/message|text|رسالة/.test(key)) map.message = i;
+      else if (/status|حالة/.test(key)) map.status = i;
+    });
+    return map.phone !== undefined ? map : null;
+  }
+
+  function ingestRows(rows) {
+    if (!rows.length) return;
+    const headerMap = detectHeaderMap(rows[0]);
+    const existingPhones = new Set(contacts.map(c => c.phone));
+    let parsed;
+
+    if (headerMap) {
+      const dataRows = rows.slice(1);
+      parsed = dedupe(dataRows.map(r => {
+        const phoneRaw = r[headerMap.phone] || '';
+        const phone = normalizePhone(phoneRaw);
+        if (phone.length < 10) return null;
+        const name = (headerMap.name !== undefined && String(r[headerMap.name]).trim()) || 'Contact';
+        const message = headerMap.message !== undefined ? String(r[headerMap.message]).trim() : '';
+        const templateLabel = headerMap.template !== undefined ? String(r[headerMap.template]).trim() : '';
+        const statusRaw = headerMap.status !== undefined ? String(r[headerMap.status]).trim() : '';
+        const alreadySent = statusRaw && !/pending|قيد|لم يرسل|جديد/i.test(statusRaw);
+        return { name, phone, message: message || undefined, templateLabel: templateLabel || undefined, alreadySent };
+      }).filter(Boolean));
+    } else {
+      const dataRows = rows[0].every(c => !/\d/.test(String(c))) ? rows.slice(1) : rows;
+      parsed = dedupe(parseRows(dataRows));
+    }
+
+    parsed.forEach(c => {
+      if (!existingPhones.has(c.phone) && c.alreadySent && !sent[c.phone]) sent[c.phone] = true;
+    });
+
+    const newOnes = parsed.filter(c => !existingPhones.has(c.phone));
+    contacts = dedupe(contacts.concat(parsed));
+    saveState();
+    render();
+    return newOnes.length;
+  }
+
+  document.getElementById('loadPasteBtn').addEventListener('click', () => {
+    const text = document.getElementById('pasteArea').value.trim();
+    if (!text) return;
+    const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
+    const rows = lines.map(l => l.split(',').map(s => s.trim()));
+    const parsed = dedupe(parseRows(rows));
+    contacts = dedupe(contacts.concat(parsed));
+    document.getElementById('pasteArea').value = '';
+    saveState();
+    render();
+  });
+
+  let clearArmed = false, clearTimer = null;
+  document.getElementById('clearBtn').addEventListener('click', () => {
+    const btn = document.getElementById('clearBtn');
+    if (!clearArmed) {
+      clearArmed = true;
+      btn.textContent = 'Tap again to confirm';
+      btn.style.color = 'var(--danger)';
+      btn.style.borderColor = 'var(--danger)';
+      clearTimer = setTimeout(() => {
+        clearArmed = false;
+        btn.textContent = 'Clear all';
+        btn.style.color = '';
+        btn.style.borderColor = '';
+      }, 3000);
+      return;
+    }
+    clearTimeout(clearTimer);
+    clearArmed = false;
+    btn.textContent = 'Clear all';
+    btn.style.color = '';
+    btn.style.borderColor = '';
+    contacts = [];
+    sent = {};
+    tags = {};
+    lastFired = null;
+    saveState();
+    render();
+  });
+
+  document.getElementById('unsentToggle').addEventListener('change', render);
+  document.getElementById('rapidToggle').addEventListener('change', () => { saveState(); render(); });
+  document.getElementById('copyToggle').addEventListener('change', () => { saveState(); render(); });
+  ['t1','t2','t3'].forEach(id => document.getElementById(id).addEventListener('input', () => { saveState(); render(); }));
+
+  function templatesList() {
+    return [document.getElementById('t1').value, document.getElementById('t2').value, document.getElementById('t3').value]
+      .filter(t => t && t.trim());
+  }
+
+  function copyMode() { return document.getElementById('copyToggle').checked; }
+
+  // Link to the chat. In exact-text mode no text is put in the URL at all,
+  // so nothing can be altered on the way into WhatsApp.
+  function getHref(c, msg) {
+    const base = `https://api.whatsapp.com/send?phone=${c.phone}`;
+    return copyMode() ? base : `${base}&text=${encodeURIComponent(msg || '')}`;
+  }
+
+  function copyText(text) {
+    let ok = false;
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.setSelectionRange(0, ta.value.length);
+      ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+    } catch (e) { ok = false; }
+    if (!ok && navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).catch(() => {});
+      ok = true;
+    }
+    return ok;
+  }
+
+  let toastTimer = null;
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove('show'), 6000);
+  }
+  function copyWithToast(text) {
+    const ok = copyText(text);
+    showToast(ok
+      ? '✓ Message copied — in WhatsApp, long-press the message box and tap Paste'
+      : '⚠️ Could not copy — turn off Exact-text mode');
+  }
+
+  function buildMessage(template, name) {
+    return template.replace(/\{name\}/g, (name && name !== 'Contact') ? name : '');
+  }
+
+  // Returns the message to send for a contact: use its own pre-composed
+  // message if the import provided one (e.g. RocketSend export), otherwise
+  // build one from the rotated typed templates.
+  function getMessageFor(c, templates, globalIdx) {
+    if (c.message) return c.message;
+    if (!templates.length) return null;
+    return buildMessage(templates[globalIdx % templates.length], c.name);
+  }
+
+  function renderFire() {
+    const list = document.getElementById('list');
+    const stats = document.getElementById('stats');
+    const unsentOnly = document.getElementById('unsentToggle').checked;
+    const rapid = document.getElementById('rapidToggle').checked;
+    const templates = templatesList();
+    const hasOwnMessages = contacts.some(c => c.message);
+
+    const sentCount = contacts.filter(c => sent[c.phone]).length;
+    stats.innerHTML = `<span>Loaded: <b>${contacts.length}</b></span><span>Sent: <b>${sentCount}</b></span><span>Remaining: <b>${contacts.length - sentCount}</b></span>`;
+
+    document.getElementById('rapidView').style.display = rapid ? '' : 'none';
+    list.style.display = rapid ? 'none' : '';
+
+    if (contacts.length === 0) {
+      const msg = '<div class="empty">No contacts loaded yet — upload a file or paste a list above.</div>';
+      list.innerHTML = msg;
+      document.getElementById('rapidCard').innerHTML = msg;
+      return;
+    }
+    if (templates.length === 0 && !hasOwnMessages) {
+      const msg = '<div class="empty">Add at least one message template above to generate send links.</div>';
+      list.innerHTML = msg;
+      document.getElementById('rapidCard').innerHTML = msg;
+      return;
+    }
+
+    if (rapid) {
+      renderRapid(templates);
+      return;
+    }
+
+    const visible = contacts.filter(c => !unsentOnly || !sent[c.phone]);
+    if (visible.length === 0) {
+      list.innerHTML = '<div class="empty">Everyone visible has been marked sent. Toggle off "unsent only" to see them.</div>';
+      return;
+    }
+
+    list.innerHTML = visible.map((c, idx) => {
+      const globalIdx = contacts.indexOf(c);
+      const msg = getMessageFor(c, templates, globalIdx);
+      const label = c.templateLabel || (templates.length ? `T${(globalIdx % templates.length) + 1}` : '');
+      const isSent = !!sent[c.phone];
+      const href = getHref(c, msg);
+      return `
+        <div class="contact ${isSent ? 'sent' : ''}" data-phone="${c.phone}">
+          <div class="contact-info">
+            <div class="name">${escapeHtml(c.name)}</div>
+            <div class="phone">+${c.phone}</div>
+            <div class="tpl">${escapeHtml(label)}</div>
+            ${tagChips(c.phone)}
+          </div>
+          <a class="send-btn ${isSent ? 'sent' : ''}" href="${href}" target="_blank" rel="noopener" data-mark="${c.phone}">
+            ${isSent ? '✓ Sent' : 'Open WhatsApp'}
+          </a>
+        </div>`;
+    }).join('');
+
+    bindTagChips(list);
+    list.querySelectorAll('[data-mark]').forEach(el => {
+      el.addEventListener('click', () => {
+        const phone = el.getAttribute('data-mark');
+        if (copyMode()) {
+          const ci = contacts.findIndex(x => x.phone === phone);
+          const m = getMessageFor(contacts[ci], templatesList(), ci);
+          if (m) copyWithToast(m);
+        }
+        sent[phone] = true;
+        saveState();
+        setTimeout(render, 300);
+      });
+    });
+  }
+
+  function renderRapid(templates) {
+    const card = document.getElementById('rapidCard');
+    const remaining = contacts.filter(c => !sent[c.phone]);
+
+    if (remaining.length === 0) {
+      card.innerHTML = `<div class="rapid-done">
+        <div class="big">🎯</div>
+        <div class="msg">All ${contacts.length} contacts hit.</div>
+        <div class="sub">Turn off rapid mode to review or reload any of them.</div>
+      </div>`;
+      return;
+    }
+
+    const c = remaining[0];
+    const globalIdx = contacts.indexOf(c);
+    const msg = getMessageFor(c, templates, globalIdx);
+    const label = c.templateLabel || (templates.length ? `T${(globalIdx % templates.length) + 1}` : '');
+    const href = getHref(c, msg);
+    const doneCount = contacts.length - remaining.length;
+
+    const lastC = lastFired ? contacts.find(x => x.phone === lastFired) : null;
+    const lastStrip = lastC
+      ? `<div class="last-strip"><div class="last-title">Just messaged <b>${escapeHtml(displayName(lastC))}</b> — how did it go?</div>${tagChips(lastC.phone)}</div>`
+      : '';
+    card.innerHTML = `
+      <div class="count">${doneCount + 1} of ${contacts.length}</div>
+      <div class="name">${escapeHtml(c.name)}</div>
+      <div class="phone">+${c.phone}${label ? ' · ' + escapeHtml(label) : ''}</div>
+      <div class="msg-preview" dir="auto">${escapeHtml(msg || '')}</div>
+      <a class="rapid-btn" id="rapidSendBtn" href="${href}" target="_blank" rel="noopener">${copyMode() ? '📋 Copy &amp; Fire →' : '🔫 Fire &amp; Next →'}</a>
+      <button class="rapid-skip" id="rapidSkipBtn">Skip this one</button>
+      ${lastStrip}
+    `;
+    bindTagChips(card);
+
+    document.getElementById('rapidSendBtn').addEventListener('click', () => {
+      if (copyMode() && msg) copyWithToast(msg);
+      lastFired = c.phone;
+      sent[c.phone] = true;
+      saveState();
+      // small delay so the WhatsApp tab has a moment to open before we swap the card
+      setTimeout(() => render(), 250);
+    });
+    card.querySelector('.msg-preview').addEventListener('click', () => { if (msg) copyWithToast(msg); });
+    document.getElementById('rapidSkipBtn').addEventListener('click', () => {
+      // move this contact to the back of the queue without marking it sent
+      contacts.splice(globalIdx, 1);
+      contacts.push(c);
+      saveState();
+      render();
+    });
+  }
+
+  // ---------- Save to phone contacts (vCard) ----------
+  function vcEsc(v) {
+    return String(v).replace(/\\/g, '\\\\').replace(/\r?\n/g, '\\n').replace(/;/g, '\\;').replace(/,/g, '\\,');
+  }
+  function buildVcf(list, prefix) {
+    const pre = (prefix || 'Lead').trim() || 'Lead';
+    return list.map(c => {
+      const hasName = c.name && c.name !== 'Contact';
+      // no name in the file -> "ADIB Lead 0585581901" so each saved contact is unique and searchable
+      const local = '0' + c.phone.replace(/^971/, '');
+      const full = hasName ? c.name : pre + ' ' + local;
+      return ['BEGIN:VCARD', 'VERSION:3.0', 'FN:' + vcEsc(full), 'N:' + vcEsc(full) + ';;;;',
+        'TEL;TYPE=CELL:+' + c.phone, 'END:VCARD'].join('\r\n');
+    }).join('\r\n') + '\r\n';
+  }
+
+  async function saveVcf(vcf, filename) {
+    let blocked = false;
+    // 1) the viewer's own download dialog, when this page is granted it
+    try {
+      if (window.claude && window.claude.use) {
+        const dl = await window.claude.use('downloads');
+        if (dl) { await dl.save({ filename, data: new Blob([vcf], { type: 'text/vcard' }) }); return 'saved'; }
+      }
+    } catch (e) { blocked = true; /* declined or not allowed for this viewer */ }
+    // 2) plain browser download (iPhone Safari offers "Add All Contacts")
+    const url = URL.createObjectURL(new Blob([vcf], { type: 'text/vcard;charset=utf-8' }));
+    const a = document.createElement('a');
+    a.href = url; a.download = filename; a.style.display = 'none';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 60000);
+    return blocked ? 'blocked' : 'download';
+  }
+
+  document.getElementById('vcPrefix').addEventListener('input', saveState);
+  document.getElementById('vcBtn').addEventListener('click', async () => {
+    const st = document.getElementById('vcStatus');
+    const unsentOnly = document.getElementById('vcUnsentOnly').checked;
+    const list = contacts.filter(c => !unsentOnly || !sent[c.phone]);
+    st.style.display = 'block';
+    if (!list.length) { st.textContent = 'No contacts to save — load a list first (or untick "only not yet sent").'; return; }
+    const vcf = buildVcf(list, document.getElementById('vcPrefix').value);
+    const filename = 'hefnawi-gun-contacts.vcf';
+    const how = await saveVcf(vcf, filename);
+    st.innerHTML = how === 'blocked'
+      ? `<b>Your phone did not receive a file.</b> This page is opened inside claude.ai, which only allows downloads for members of its organization. Fix: put this page on your own GitHub Pages link (downloads work there), or ask for the contacts file and open it from the chat.`
+      : `Prepared <b>${list.length}</b> contact${list.length === 1 ? '' : 's'}. ` +
+      (how === 'saved'
+        ? 'Open the saved file, then tap <b>Add All Contacts</b>.'
+        : 'If your phone asks, tap <b>Add All Contacts</b>. Nothing happened? Open the Files / Downloads app and tap <b>hefnawi-gun-contacts.vcf</b>.');
+  });
+
+  // ---------- tags, results, tabs ----------
+  function displayName(c) { return (c.name && c.name !== 'Contact') ? c.name : '+' + c.phone; }
+
+  function tagChips(phone) {
+    return '<div class="chips">' + TAGS.map(t =>
+      `<button type="button" class="tag-chip${tags[phone] === t.k ? ' on' : ''}" data-tag-phone="${phone}" data-tag-key="${t.k}">${t.label}</button>`
+    ).join('') + '</div>';
+  }
+  function bindTagChips(root) {
+    root.querySelectorAll('[data-tag-key]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault(); e.stopPropagation();
+        const ph = btn.getAttribute('data-tag-phone'), key = btn.getAttribute('data-tag-key');
+        if (tags[ph] === key) delete tags[ph]; else tags[ph] = key;
+        saveState();
+        render();
+      });
+    });
+  }
+
+  function updateProgress() {
+    const total = contacts.length;
+    const done = contacts.filter(c => sent[c.phone]).length;
+    document.getElementById('hdrBar').style.width = (total ? (done / total * 100) : 0) + '%';
+    document.getElementById('hdrCount').textContent = total
+      ? `${done} of ${total} sent · ${total - done} to go`
+      : 'No contacts loaded yet';
+  }
+
+  function renderResults() {
+    const row = document.getElementById('filterRow');
+    row.innerHTML = TAGS.map(t => {
+      const n = contacts.filter(c => tags[c.phone] === t.k).length;
+      return `<button type="button" class="filter-chip${resultsFilter === t.k ? ' on' : ''}" data-filter="${t.k}">${t.label} · ${n}</button>`;
+    }).join('');
+    row.querySelectorAll('[data-filter]').forEach(b => b.addEventListener('click', () => {
+      resultsFilter = b.getAttribute('data-filter'); renderResults();
+    }));
+    const items = contacts.filter(c => tags[c.phone] === resultsFilter);
+    const label = TAGS.find(t => t.k === resultsFilter).label;
+    document.getElementById('resCount').textContent = `${items.length} contact${items.length === 1 ? '' : 's'} · ${label}`;
+    const rl = document.getElementById('resList');
+    if (!items.length) {
+      rl.innerHTML = '<div class="empty">Nobody tagged this way yet. After you message someone, tag how it went — on the Fire tab.</div>';
+      return;
+    }
+    rl.innerHTML = items.map(c => `
+      <div class="contact">
+        <div class="contact-info">
+          <div class="name">${escapeHtml(displayName(c))}</div>
+          ${(c.name && c.name !== 'Contact') ? `<div class="phone">+${c.phone}</div>` : ''}
+          ${tagChips(c.phone)}
+        </div>
+        <a class="chat-link" href="https://api.whatsapp.com/send?phone=${c.phone}" target="_blank" rel="noopener">Open chat</a>
+      </div>`).join('');
+    bindTagChips(rl);
+  }
+  document.getElementById('copyNumsBtn').addEventListener('click', () => {
+    const items = contacts.filter(c => tags[c.phone] === resultsFilter);
+    if (!items.length) { showToast('Nothing to copy for this filter yet'); return; }
+    const ok = copyText(items.map(c => '+' + c.phone).join('\n'));
+    showToast(ok ? `✓ Copied ${items.length} number${items.length === 1 ? '' : 's'}` : '⚠️ Could not copy');
+  });
+
+  function render() { renderFire(); updateProgress(); renderResults(); }
+
+  function showTab(name) {
+    currentTab = name;
+    ['setup', 'fire', 'results'].forEach(n => {
+      document.getElementById('tab-' + n).classList.toggle('active', n === name);
+    });
+    document.querySelectorAll('#bottomNav button').forEach(b => b.classList.toggle('active', b.getAttribute('data-tab') === name));
+    window.scrollTo(0, 0);
+    saveState();
+  }
+  document.querySelectorAll('#bottomNav button').forEach(b => b.addEventListener('click', () => showTab(b.getAttribute('data-tab'))));
+
+  function escapeHtml(s) {
+    return s.replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+
+  loadState();
+  render();
+  showTab(currentTab || (contacts.length ? 'fire' : 'setup'));
+})();
+</script>
+</body>
+</html>
