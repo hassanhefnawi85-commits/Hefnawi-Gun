@@ -366,6 +366,7 @@
       <input type="checkbox" id="vcUnsentOnly" checked>
     </div>
     <button class="btn-primary" id="vcBtn">Save contacts to phone</button>
+    <button class="btn-ghost" id="vcBtn2" style="width:100%;margin-top:8px;padding:10px">Or download the file instead</button>
     <div id="vcStatus" class="vc-status" style="display:none"></div>
   </div>
 
@@ -971,8 +972,21 @@ Email: hassan.gharib@adib.com
     }).join('\r\n') + '\r\n';
   }
 
-  async function saveVcf(vcf, filename) {
+  async function saveVcf(vcf, filename, mode) {
     let blocked = false;
+    // 0) iPhone/Android share sheet with the real .vcf file: "Save to Files", Mail, Messages, AirDrop...
+    if (mode !== 'download') {
+      try {
+        const file = new File([vcf], filename, { type: 'text/vcard' });
+        if (navigator.canShare && navigator.canShare({ files: [file] })) {
+          await navigator.share({ files: [file], title: 'Contacts' });
+          return 'shared';
+        }
+      } catch (e) {
+        if (e && e.name === 'AbortError') return 'cancelled'; // user closed the share sheet
+        /* share not allowed here: fall through to the download routes */
+      }
+    }
     // 1) the viewer's own download dialog, when this page is granted it
     try {
       if (window.claude && window.claude.use) {
@@ -990,7 +1004,7 @@ Email: hassan.gharib@adib.com
   }
 
   document.getElementById('vcPrefix').addEventListener('input', saveState);
-  document.getElementById('vcBtn').addEventListener('click', async () => {
+  async function runSaveContacts(mode) {
     const st = document.getElementById('vcStatus');
     const unsentOnly = document.getElementById('vcUnsentOnly').checked;
     const list = contacts.filter(c => !unsentOnly || !sent[c.phone]);
@@ -998,14 +1012,21 @@ Email: hassan.gharib@adib.com
     if (!list.length) { st.textContent = 'No contacts to save — load a list first (or untick "only not yet sent").'; return; }
     const vcf = buildVcf(list, document.getElementById('vcPrefix').value);
     const filename = 'hefnawi-gun-contacts.vcf';
-    const how = await saveVcf(vcf, filename);
+    const how = await saveVcf(vcf, filename, mode);
+    if (how === 'cancelled') { st.textContent = 'Share sheet closed. Tap the button again whenever you are ready.'; return; }
+    if (how === 'shared') {
+      st.innerHTML = `<b>${list.length}</b> contact${list.length === 1 ? '' : 's'} ready. In the share sheet choose <b>Save to Files</b>, then open the Files app, tap <b>${filename}</b> and tap <b>Add All Contacts</b>.`;
+      return;
+    }
     st.innerHTML = how === 'blocked'
       ? `<b>Your phone did not receive a file.</b> This page is opened inside claude.ai, which only allows downloads for members of its organization. Fix: put this page on your own GitHub Pages link (downloads work there), or ask for the contacts file and open it from the chat.`
       : `Prepared <b>${list.length}</b> contact${list.length === 1 ? '' : 's'}. ` +
       (how === 'saved'
         ? 'Open the saved file, then tap <b>Add All Contacts</b>.'
         : 'If your phone asks, tap <b>Add All Contacts</b>. Nothing happened? Open the Files / Downloads app and tap <b>hefnawi-gun-contacts.vcf</b>.');
-  });
+  }
+  document.getElementById('vcBtn').addEventListener('click', () => runSaveContacts('share'));
+  document.getElementById('vcBtn2').addEventListener('click', () => runSaveContacts('download'));
 
   // ---------- tags, results, tabs ----------
   function displayName(c) { return (c.name && c.name !== 'Contact') ? c.name : '+' + c.phone; }
